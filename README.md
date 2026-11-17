@@ -4,9 +4,7 @@ A static, multi-page portfolio website built with HTML and CSS.
 
 Disclaimer: This is a mockup website created for coursework. The name "Ella Xu" is used as a decoy. It is placeholder content and does not represent a real person's professional portfolio.
 
-Overview
-
-This project demonstrates the basic structure of a personal portfolio site, including a header, a navigation bar, a main content area with a headshot image and short introduction, and a footer.
+Overview: This project demonstrates the basic structure of a personal portfolio site, including a header, a navigation bar, a main content area with a headshot image and short introduction, and a footer.
 
 Pages
 Page	File	Description
@@ -22,10 +20,9 @@ my-portfolio/
 ├── style.css         # Shared stylesheet
 └── src/
     └── headshot.jpg  # Placeholder headshot image
-Built With
-HTML5 (semantic elements: header, nav, main, footer)
-CSS3
-Running Locally
+Built WithHTML5 (semantic elements: header, nav, main, footer) and CSS3
+
+Running Locally:
 Clone or download this repository.
 Open the my-portfolio folder.
 Open index.html in any web browser.
