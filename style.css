@@ -1,0 +1,178 @@
+/* universal selector - needed on every page. basically overwrites the styling set by the browser*/
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* code for all pages */
+
+body {
+  margin: auto;
+  width: 90%;
+
+  /* stops page from being scrollable horizontally */
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+header{
+    text-align: center;
+    margin: 3%;
+}
+
+/* creates a horizontal nav */
+nav ul{
+    padding-left:0;
+    list-style: none;
+    text-align: center;
+    margin: 2%;
+}
+
+nav ul li{
+    display: inline;
+    padding: 2%;
+}
+
+footer {
+  margin: 2%;
+}
+
+
+/* CODE FOR HOME PAGE */
+
+/* when using position absolute, the parent should be position relative!! */
+#img-wrapper{
+    position: relative;
+}
+
+#headshot-img{
+    max-width: 30vw;
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+
+  /* Draw once and done. */
+  animation: dash 5s linear forwards;
+
+  /* Keep drawing */
+  /* animation: dash 5s ease-in-out infinite alternate; */
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+/* CODE FOR PROJECTS */
+
+main h3 {
+  margin: 3% 0; /*short hand for saying margin-top/bottom: 3%, margin-left/right: 0*/
+}
+
+main iframe,
+main blockquote,
+main p {
+  margin: 15px 0;
+}
+
+
+
+
+
+/* CODE FOR BUTTON */
+
+/* Light mode (default) */
+
+body {
+
+  /* code added last workshop */
+  margin: auto;
+  width: 90%;
+
+  /* light mode colors */
+  background-color: #f2f2f2;
+  color: #1a1a1a;
+  transition: background-color 0.3s, color 0.3s;
+
+  /* stops page from being scrollable horizontally */
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Dark mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #f9f9f9;
+}
+
+/* Optional button styling */
+button {
+  border-radius: 8px;
+  background-color: #111;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode button {
+  background-color: #fff;
+  color: #111;
+}
+
+
+/* FOR RAIN EFFECT */
+canvas {
+  width: 100%;
+  background-image: url("src/buildathon.JPG");
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+/* CODE FOR SCROLLING LINES OF TEXT */
+
+
+main{
+    position: relative;
+}
+
+#scrolling-wrapper{
+  position: absolute;
+  opacity: 40%;
+  z-index: -1;
+}
+
+.scrolling-line{
+    animation: scroll 10s linear infinite;
+    white-space: nowrap; 
+    font: calc(2px + 5vw) monospace;
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateX(100%);
+    }
+    100% { 
+        transform: translateX(-100%); 
+    }
+}
+
+
+
+
+
+
